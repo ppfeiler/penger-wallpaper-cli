@@ -3,4 +3,5 @@ export interface Wallpaper {
     extension: string;
     by: string;
     inspiredBy: string;
+    url: string;
 }
