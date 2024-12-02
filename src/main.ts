@@ -1,8 +1,7 @@
 #!/usr/bin/env node --no-warnings
 
 import { Command } from "commander";
-import { listWallpapers } from "./commands/list.command";
-import { downloadWallpaper } from "./commands/download.command";
+import { listWallpapers, downloadWallpaper } from "./commands";
 
 const program = new Command();
 
@@ -19,7 +18,7 @@ program
 program
     .command("download <wallpaper_name>")
     .description("Download the given wallpaper")
-    .option("--out <path>", "Specify output path", "~/Pictures/Penger")
+    .option("--output-path <path>", "Specify output path", "~/Pictures/Penger")
     .action(downloadWallpaper);
 
 program.parse();
