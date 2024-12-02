@@ -1,23 +1,17 @@
 import chalk from "chalk";
 import * as cheerio from "cheerio";
+import { Wallpaper } from "../types/wallpaper.interface";
 
 const PENGER_WALLPAPER_BASEURL = "https://penger.city/wallpapers/"
 
-interface Wallpaper {
-    name: string;
-    extension: string;
-    by: string;
-    inspiredBy: string;
-}
-
 export async function listWallpapers() {
     const wallpapers = await loadAvailableWallpapers();
-    
+
     if (!wallpapers.length) {
         console.log(chalk.red("No Penger Wallpapers available!"));
         return;
     }
-    
+
     console.log(chalk.blue("Available Penger Wallpapers:"))
     wallpapers.forEach((wallpaper) => {
         console.log(`"${chalk.green(wallpaper.name)}" by "${chalk.blue(wallpaper.by)}" and inspired by "${chalk.blue(wallpaper.inspiredBy)}"`)

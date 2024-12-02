@@ -1,8 +1,8 @@
 #!/usr/bin/env node --no-warnings
 
 import { Command } from "commander";
-import { listWallpapers } from "./commands/list";
-import { downloadWallpaper } from "./commands/download";
+import { listWallpapers } from "./commands/list.command";
+import { downloadWallpaper } from "./commands/download.command";
 
 const program = new Command();
 
