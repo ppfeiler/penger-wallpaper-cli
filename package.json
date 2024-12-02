@@ -1,0 +1,38 @@
+{
+  "name": "penger-wallpaper-cli",
+  "version": "1.0.0",
+  "description": "a cli for downloading awesome penger wallpapers",
+  "bin": {
+    "penger-wallpaper": "./dist/main.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppfeiler/penger-wallpaper-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "penger",
+    "wallpaper",
+    "typescript"
+  ],
+  "author": "Patrick Pfeiler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppfeiler/penger-wallpaper-cli/issues"
+  },
+  "homepage": "https://github.com/ppfeiler/penger-wallpaper-cli#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0"
+  }
+}
