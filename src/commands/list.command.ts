@@ -1,7 +1,7 @@
 import chalk from "chalk";
-import { loadAvailableWallpapers } from "../services/wallpaper.service";
+import { loadAvailableWallpapers } from "../services";
 
-export async function listWallpapers() {
+export async function listCommand() {
     const wallpapers = await loadAvailableWallpapers();
 
     if (!wallpapers.length) {

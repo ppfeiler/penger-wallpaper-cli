@@ -22,7 +22,7 @@ export async function loadAvailableWallpapers(): Promise<Wallpaper[]> {
                     extension: nameAndExtension[1],
                     by,
                     inspiredBy,
-                    url 
+                    url: PENGER_WALLPAPER_BASEURL + url 
                 }
             );
         });

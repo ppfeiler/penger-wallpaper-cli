@@ -1,2 +1,2 @@
-export { listWallpapers } from "./list.command"
-export { downloadWallpaper } from "./download.command"
+export { listCommand } from "./list.command"
+export { downloadCommand } from "./download.command"
