@@ -6,7 +6,7 @@
     "penger-wallpaper": "./dist/main.js"
   },
   "scripts": {
-    "dev": "ts-node src/main.ts",
+    "dev": "tsx src/main.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "build": "tsc"
@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/ppfeiler/penger-wallpaper-cli#readme",
   "devDependencies": {
-    "ts-node": "^10.9.2",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.7"
   },
